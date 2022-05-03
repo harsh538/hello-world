@@ -6,9 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-click.component.css']
 })
 export class ButtonClickComponent {
-public title='Toggle';
-dispaly=true;
-update(){
-  this.dispaly=!this.dispaly;
-}
+public title='Alert in Bootstrap';
 }
