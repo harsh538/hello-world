@@ -6,5 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-click.component.css']
 })
 export class ButtonClickComponent {
-public title='Header';
+public title='Basic Form';
+Userdata:any={}
+getData(data:any){
+  console.warn(data);
+  this.Userdata=data;
+}
 }
