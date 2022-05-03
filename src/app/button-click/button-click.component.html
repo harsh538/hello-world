@@ -1,0 +1,10 @@
+<h2>{{title}}</h2>
+
+<ul *ngFor="let i of users">
+        <li>{{i.name}}</li>
+        <li>{{i.city}}</li>
+        <li>Social Ac are:</li>
+        <ul *ngFor="let hg of i.socialAc">
+            <li>{{hg}}</li>
+        </ul>
+</ul>
