@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Code Step By Step';
-  data=10;
-  updateChild(){
-    this.data=Math.floor(Math.random()*10);
-  }
+  title = 'Reusable component';
+  userDetails=[
+    {name:'Harshad',email:'harsh@test.com'},
+    {name:'vishal',email:'vishal@test.com'},
+    {name:'Rajat',email:'Rajat@test.com'},
+    {name:'Khizar',email:'Khizar@test.com'}
+  ]
+
 }

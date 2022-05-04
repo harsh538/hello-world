@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input} from '@angular/core';
 
 @Component({
   selector: 'app-button-click',
@@ -7,6 +7,5 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 
 export class ButtonClickComponent {
-  public title = 'pass data child to parent component';
-  @ Input() item=0;
+  @Input() item:{name:string,email:string}={name:'',email:''}
 }
