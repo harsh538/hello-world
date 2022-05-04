@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Two Way binding';
-  name:any;
+  title = 'Template Reference Variable';
+  callFunction(val:any)
+  {
+    console.warn(val);
+  }
 }
