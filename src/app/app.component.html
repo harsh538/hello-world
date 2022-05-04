@@ -1,8 +1,7 @@
-<h1>{{title}}!</h1>
-<h2>To Uppercase pipeline is (variable | uppercase) : {{text | uppercase}}</h2>
-<h2>To Lowercase pipeline is (variable | lowercase) : {{text | lowercase}}</h2>
-
-<h3>{{date}}</h3>
-<h3>{{date | date}}</h3>
-<h3>{{date | date:'yyyy-MM-dd'}}</h3>
-<h3>{{date | date:'fullDate' }}</h3>
+<h1>{{title | uppercase}}!</h1>
+<h1>{{title | slice :3:7 | uppercase}}</h1>
+<h2>{{user | json | uppercase}}</h2>
+<h3>{{0002000.3000 | number: '2.3-4'}}</h3>
+<h3>{{2.3 | number: '4.3-4'}}</h3>
+<h1>{{50 | currency:'INR'}}</h1>
+<h1>{{'how are you'| titlecase }}</h1>

@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Pipes in Angular';
-  text="Hello World";
-  date= Date();
+  title = 'Advance Pipes in Angular';
+  user = { 
+    name:'Anil',
+    phone:1234
+  }
 }
