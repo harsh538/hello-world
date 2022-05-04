@@ -7,7 +7,8 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-button-click></app-button-click>
+<app-button-click [item]="data" ></app-button-click>
+<button (click)="updateChild()">update item value</button>
   <h1>welcome to {{title}}!</h1>
   <!-- <app-test></app-test> -->
   
