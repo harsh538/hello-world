@@ -1,5 +1,4 @@
 <h1>{{title}}!</h1>
-<h1>{{data}}</h1>
-<app-button-click (updateDetailsEvent)="userDetails($event)"></app-button-click>
-  <!-- <app-test></app-test> -->
-<router-outlet></router-outlet>
+
+<input type="text" [(ngModel)]="name" />
+<h1>{{name}}</h1>
