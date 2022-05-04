@@ -1,2 +1,8 @@
 <h1>{{title}}!</h1>
-<button (click)="update()">update</button>
+<h2>To Uppercase pipeline is (variable | uppercase) : {{text | uppercase}}</h2>
+<h2>To Lowercase pipeline is (variable | lowercase) : {{text | lowercase}}</h2>
+
+<h3>{{date}}</h3>
+<h3>{{date | date}}</h3>
+<h3>{{date | date:'yyyy-MM-dd'}}</h3>
+<h3>{{date | date:'fullDate' }}</h3>
