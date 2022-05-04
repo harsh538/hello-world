@@ -1,4 +1,4 @@
-import { Component, OnInit,Input} from '@angular/core';
+import { Component, OnInit,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-button-click',
@@ -7,5 +7,5 @@ import { Component, OnInit,Input} from '@angular/core';
 })
 
 export class ButtonClickComponent {
-  @Input() item:{name:string,email:string}={name:'',email:''}
+  @Output() updateDetailsEvent= new EventEmitter<string>();
 }

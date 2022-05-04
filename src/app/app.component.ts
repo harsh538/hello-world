@@ -6,12 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Reusable component';
-  userDetails=[
-    {name:'Harshad',email:'harsh@test.com'},
-    {name:'vishal',email:'vishal@test.com'},
-    {name:'Rajat',email:'Rajat@test.com'},
-    {name:'Khizar',email:'Khizar@test.com'}
-  ]
-
+  title = 'pass data from child to parent component';
+  data="x";
+  userDetails(items:string) {
+    console.warn(items);
+    this.data=items;
+  }
 }

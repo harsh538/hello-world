@@ -1,6 +1,5 @@
 <h1>{{title}}!</h1>
-<ul *ngFor="let user of userDetails">
-<app-button-click [item]="user"></app-button-click>
-</ul>
+<h1>{{data}}</h1>
+<app-button-click (updateDetailsEvent)="userDetails($event)"></app-button-click>
   <!-- <app-test></app-test> -->
 <router-outlet></router-outlet>
