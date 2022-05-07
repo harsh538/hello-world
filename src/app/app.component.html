@@ -1,11 +1,9 @@
 <h1>{{title}}!</h1>
 
-<form #templateForm="ngForm" (ngSubmit)="getDetails(templateForm.value)">
-    <input type="text" name="name" placeholder="Enter name" ngModel/><br><br>
-    <input type="password" name="pwd" placeholder="Enter password" ngModel><br><br>
-    <button>Log in</button>
+<form [formGroup]="loginForm" (ngSubmit)="addDetails()">
+    <input type="text" placeholder="Enter username" formControlName="user"/>
+    <br><br>
+    <input type="password" placeholder="Enter password" formControlName="password"/>
+    <br><br>
+    <button>Login</button>
 </form>
-
-<button (click)="getDetails(templateForm.value)">Outside form tag</button> 
-<!-- line no 9 is work same as line no 6 that means button work fine although it is outside form -->
-<!-- without name input property form will not work eg. name="name" or name="pwd" -->
