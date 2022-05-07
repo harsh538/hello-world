@@ -5,5 +5,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Advance Pipes in Angular';
+  title = 'Template Form';
+  getDetails(items: any) {
+    console.warn(items);
+  }
 }
