@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Advance Pipes in Angular';
-  user = { 
-    name:'Anil',
-    phone:1234
-  }
 }
