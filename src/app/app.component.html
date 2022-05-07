@@ -2,8 +2,12 @@
 
 <form [formGroup]="loginForm" (ngSubmit)="addDetails()">
     <input type="text" placeholder="Enter username" formControlName="user"/>
-    <br><br>
+    <br>
+    <span style="color:red" *ngIf="userx && userx.invalid && userx.touched">This filed is required</span>
+    <br>
     <input type="password" placeholder="Enter password" formControlName="password"/>
-    <br><br>
-    <button>Login</button>
+    <br>
+    <span style="color:red" *ngIf="pwd && pwd.invalid && pwd.touched">Max length should be 5</span>
+    <br>
+    <button [disabled]="loginForm.invalid">Login</button>
 </form>
